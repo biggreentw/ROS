@@ -55,6 +55,7 @@ problem.AddResidualBlock(cost_function, NULL, &x);
 #include <queue>
 ```
 + 2.write a functor
+
 ![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW8_p2.PNG)
 ```c++=
 // f1 = x1 + 10 * x2

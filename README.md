@@ -21,6 +21,7 @@ if functor is f(x)=y-exp(m*x+c), we will set rediual to
 residual[0] = T(y_) - exp(m[0] * T(x_) + c[0]);
 ```
   + Question2:Know how different parts are between AutoDiffCostrFunction, NumericDiffCostFunction and AutoDiffCostrFunction.
+    
     for AutoDiffCostrFunction(C++ templates makes automatic differentiation efficient)
 ```c++=
 Problem problem;

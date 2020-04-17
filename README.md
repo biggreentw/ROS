@@ -55,6 +55,7 @@ problem.AddResidualBlock(cost_function, NULL, &x);
 #include <queue>
 ```
 + 2.write a functor
+![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW8_p2.PNG)
 ```c++=
 // f1 = x1 + 10 * x2
 struct F1 {
@@ -102,7 +103,10 @@ struct F4 {
     ceres::Problem problem;
     problem.AddResidualBlock(
       new ceres::AutoDiffCostFunction<F1, 1, 1, 1>(new F1), NULL, &x1, &x2);
-      //
+      //<F1, 1, 1, 1>  ------------->  <struct of functor, dimension of x1, dimension of x2, dimension of residual>
+      //NULL -----------------------> means that do not use loss_function
+      //&x1, &x2 -------------------> solve to find the x1, x2
+      //AddResidualBlock(CostFunction *cost_function, LossFunction *loss_function, double *x0, double *x1, ...)
     problem.AddResidualBlock(
       new ceres::AutoDiffCostFunction<F2, 1, 1, 1>(new F2), NULL, &x3, &x4);
     problem.AddResidualBlock(
@@ -114,11 +118,14 @@ struct F4 {
 ```c++=
     //Create the "Optine"
     ceres::Solver::Options options;
+    
     //Set some about "Optine"
     options.linear_solver_type = ceres::DENSE_QR;
     options.minimizer_progress_to_stdout = true;
+    
     //Create the "Summary"
     ceres::Solver::Summary summary;
+    
     //Solve, then get the answer.
     ceres::Solve(options, &problem, &summary);
     

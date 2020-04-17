@@ -46,8 +46,8 @@ problem.AddResidualBlock(cost_function, NULL, &x);
   ![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW8_p1.JPG)
 
 - cere_solver_tutorial 2
-  ```c++=
-  #include <ros/ros.h>
+```c++=
+#include <ros/ros.h>
 #include <ceres/ceres.h>
 #include <ceres/rotation.h>
 #include <eigen3/Eigen/Dense>

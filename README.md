@@ -39,6 +39,10 @@ CostFunction* cost_function =
 problem.AddResidualBlock(cost_function, NULL, &x);
 ```
 
-
+  + Question3: Will it affect the whole iteration if knowing an iteration is longer than the other ?
+  No, it won't affect the whole iteration.
+  ![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW8_p1.JPG)
+  source/HW8_p1.JPG
+- cere_solver_tutorial 2
   
   

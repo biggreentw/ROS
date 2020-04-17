@@ -13,7 +13,7 @@ by BigGreenTW
 - cere_solver_tutorial 1
   + Question1: Know how to set resdiual.
     If a functor is f(x)=10-X, we will set rediual to
-  c++=
+```c++=
 var s = "JavaScript syntax highlighting";
 alert(s);
 function $initHighlight(block, cls) {

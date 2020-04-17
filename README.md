@@ -16,7 +16,7 @@ by BigGreenTW
 ```c++=
 residual[0] = T(10.0) - x[0];
 ```
-   if functor is f(x)=y-exp(m*x+c), we will set rediual to
+    if functor is f(x)=y-exp(m*x+c), we will set rediual to
 ```c++=
 residual[0] = T(y_) - exp(m[0] * T(x_) + c[0]);
 ```

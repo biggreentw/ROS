@@ -14,5 +14,9 @@ by BigGreenTW
   + Question1: Know how to set resdiual.
     If a functor is f(x)=10-X, we will set rediual to
 ```c++=
-residual[0] = T(10.0) - x[0];  
-
+residual[0] = T(10.0) - x[0];
+```
+   same as f(x)=y-exp(m*x+c), we will set rediual to
+```c++=
+residual[0] = T(y_) - exp(m[0] * T(x_) + c[0]);
+```

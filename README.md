@@ -103,7 +103,7 @@ struct F4 {
   }
 };
 ```
-+ 3.new costFunction struct, here have 4 different functor
++ 3.new costFunction struct, here have 4 different functor.  Use "automatic differentiation."
 ```c++=
     double x1, x2, x3, x4;
     x1 = 1;

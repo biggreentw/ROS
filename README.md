@@ -9,6 +9,15 @@ by BigGreenTW
 [![Watch the video](https://img.youtube.com/vi/cV2PwPAWOXM/maxresdefault.jpg)](https://youtu.be/cV2PwPAWOXM)
 
 ---
+## HW7
+- Q1:Transformation AB is rotated by 90 degree about the z axis and transformation BC is rotated by 60 degree about the z axis, and generate the output transformation AC.
+![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW7_P1-2.jpg)
+![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW7_P1.JPG)
+
+- Q2:Transformation BA and CA are the inputs to generate output transformation BC.
+![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW7_P2-2.jpg)
+![Image description](https://github.com/biggreentw/ROS/blob/master/source/HW7_P2.JPG)
+---
 ## HW8
 - cere_solver_tutorial 1
   + Question1: Know how to set resdiual.
